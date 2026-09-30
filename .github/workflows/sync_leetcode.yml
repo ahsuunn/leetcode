@@ -16,6 +16,9 @@ jobs:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           leetcode-csrf-token: ${{ secrets.LEETCODE_CSRF_TOKEN }}
           leetcode-session: ${{ secrets.LEETCODE_SESSION }}
-          destination-folder: solutions
+          destination-folder: 'solutions'
           verbose: true
           commit-header: "[LeetCode Sync]"
+        env:
+          GIT_AUTHOR_EMAIL: "themalique1910@gmail.com"
+          GIT_COMMITTER_EMAIL: "themalique1910@gmail.com"
